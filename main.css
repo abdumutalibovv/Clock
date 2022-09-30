@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "alarm clock";
+    src: url("./fonts/alarmclock.woff2") format("woff2"), url("./fonts/alarmclock.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "alarm clock";
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.time {
+    padding: 50px;
+    border: 10px solid rgb(13, 65, 90);
+    text-shadow: 0px 0px 15px #ff0000;
+    color: #ff0000;
+    font-size: 100px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .time {
+        padding: 30px;
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .time {
+        padding: 20px;
+        font-size: 50px;
+    }
+}
